@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6de6a3, #feb47b);
+    overflow: hidden;
+}
+
+.cal {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+h1 {
+    color: #34495e;
+    text-align: center;
+    
+}
+h1:hover { 
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    background: linear-gradient(to right, #eb29b1, #5ab9f7);
+
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #3498db, #6dd5fa);
+    color: #fff;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #eb29b1, #5ab9f7);
+}
+
+#result {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    border: none;
+    background: #ecf0f1;
+    border-radius: 8px;
+    outline: none;
+    color: #34495e;
+    transition: background 0.3s ease;
+}
+
+#result:hover {
+    background: #d0d3d4;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    animation: gradient 10s infinite;
+}
